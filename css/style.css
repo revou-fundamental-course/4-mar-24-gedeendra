@@ -1,0 +1,31 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background-color: rgb(240, 241, 247);
+}
+
+.container-header-satu {
+    display: flex;
+    padding: 4px;
+}
+
+.header-logo {
+    padding: 4px;
+}
+
+.header-program {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 4px;
+    margin: 2px;
+}
+
+.container-header-dua {
+    display: flex;
+    font-size: 32px;
+    font-weight: lighter;
+    padding-left: 8px;
+    padding-bottom: 16px;
+}
