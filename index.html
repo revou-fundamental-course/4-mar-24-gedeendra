@@ -19,10 +19,77 @@
             </div>
         </div>
         <div class="container-header-dua">
-            <div class="header-sub">
-                Software Engineering - Fundamental Course Assignment
-            </div>            
+            Software Engineering - Fundamental Course Assignment     
         </div>
     </header>
+    <main>
+        <section class="main-container">
+            <!-- BMI Form -->
+            <div class="container-form">
+                <div class="form-title">
+                    BMI Calculator
+                </div>
+                <div class="form-prolog">
+                    Having an ideal body weight is the dream of everyone. Not only does it support a pleasing appearance, but an ideal body weight also indicates a healthy condition. What about you? Let's calculate now using the BMI calculator.
+                </div>
+                <div class="form-input">
+                    <div class="input-gender">
+                        Gender
+                    </div>
+                    <div class="gender-radio">
+                        <input type="radio" name="sex" id="sex-man"><label for="sex-man">Male</label>
+                        <input type="radio" name="sex" id="sex-woman"><label for="sex-woman">Female</label>
+                    </div>
+                    <div class="form-bar">
+                        <label>Age (years)</label>
+                        <div>
+                            <input name="bmiAge" type="number" class="form-bar" id="bmiAge" required="required">
+                        </div>
+                    </div>
+                    <div class="form-bar">
+                        <label>Body Weight (kg)</label>
+                        <div>
+                            <input name="bmiWeight" type="number" class="form-bar" id="bmiWeight" required="required">
+                        </div>
+                    </div>
+                    <div class="form-bar">
+                        <label>Body Height (cm)</label>
+                        <div>
+                            <input name="bmiHeight" type="number" class="form-bar" id="bmiHeight" required="required">
+                        </div> 
+                    </div>
+                
+                    <!-- Execute Button -->
+                    <div class="form-button">
+                        <div class="button-special">
+                            <button type="button" id="button-calculate">Calculate BMI</button>
+                        </div>
+                        <div class="button-normal">
+                            <button type="button" id="button-reset">Reset</button>
+                        </div>                
+                    </div>
+                </div>
+                
+                <!-- BMI Calculator features -->
+                <div class="form-features">
+                    <p class="features-subtitle">Features Highlights</p>
+                    <ol>
+                        <li>Calculate body weight</li>
+                        <li>Determine whether the body weight falls into the ideal category or not</li>
+                        <li>Prepare weight loss programs</li>
+                    </ol>
+                    <p>This calculator is intended for use by adults only (pregnant or nursing women should not rely on BMI readings) and no action should be taken based on its value without consulting with a qualified individual such as a doctor.</p>
+                    <p>The calculator will provide you with an overview of your body weight compared to general values. Body Mass Index (BMI) is calculated as your weight (in kilograms) divided by the square of your height (in meters) or BMI = Kg/M<sup>2</sup>.</p>
+                </div>
+            </div>
+
+            <!-- BMI Result -->
+            <div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

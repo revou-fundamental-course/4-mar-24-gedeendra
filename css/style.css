@@ -2,6 +2,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+/* Header */
 header {
     background-color: rgb(240, 241, 247);
 }
@@ -25,7 +27,79 @@ header {
 .container-header-dua {
     display: flex;
     font-size: 32px;
-    font-weight: lighter;
+    font-weight: light;
     padding-left: 8px;
     padding-bottom: 16px;
+}
+
+.main-container {
+    display: flex;
+}
+
+/* Form Display */
+.container-form {
+    width: 50%;
+    margin: 12px auto;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: lighter;
+    margin-bottom: 8px;
+}
+
+.form-prolog {
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.form-input {
+    background-color: rgb(242, 243, 245);
+    font-weight: bold;
+    padding: 12px;
+    margin: 12px auto;
+}
+
+.gender-radio, .form-bar {
+    margin-top: 8px;
+    padding: 6px 0px;
+}
+
+.form-bar input {
+    width: 100%;
+    border-radius: 4px;
+    border-color: rgb(249, 249, 249);
+    padding: 4px 6px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+/* Button in Form Display */
+.form-button {
+    display: flex;
+}
+
+.form-button button {
+    margin-top: 20px;
+    margin-right: 8px;
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 0px;
+}
+
+.button-special button {
+    background-color: rgb(117, 190, 219);
+    color: white;
+}
+
+
+/* Feature Highlights */
+.form-features p {
+    margin-top: 32px;
+}
+
+.features-subtitle {
+    font-size: 20px; 
 }
