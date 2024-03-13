@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RevoU - BMI Calculator</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src=".js/script.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="form-input">
                     <div class="input-gender">
-                        Gender
+                        <label>Gender</label>
                     </div>
                     <div class="gender-radio">
                         <input type="radio" name="sex" id="sex-man"><label for="sex-man">Male</label>
@@ -43,7 +43,7 @@
                     <div class="form-bar">
                         <label>Age (years)</label>
                         <div>
-                            <input name="bmiAge" type="number" class="form-bar" id="bmiAge" required="required">
+                            <input name="bmiAge" type="number" class="form-bar" id="bmiAge" placeholder="18 years old minimum" required="required">
                         </div>
                     </div>
                     <div class="form-bar">
@@ -62,10 +62,10 @@
                     <!-- Execute Button -->
                     <div class="form-button">
                         <div class="button-special">
-                            <button type="button" id="button-calculate">Calculate BMI</button>
+                            <button type="button" id="button-calculate" onclick="bmiCalculation()">Calculate BMI</button>
                         </div>
                         <div class="button-normal">
-                            <button type="button" id="button-reset">Reset</button>
+                            <button type="button" id="button-reset" onclick="bmiReset">Reset</button>
                         </div>                
                     </div>
                 </div>
@@ -84,9 +84,43 @@
             </div>
 
             <!-- BMI Result -->
-            <div>
-                <div>
-
+            <div class="container-result">
+                <div class="result-title">
+                    Result
+                </div>
+                <!-- Result Box -->
+                <div class="result-box">
+                    <div class="result-category-one" id="category-one"></div>
+                    <div class="result-value" id="bmi-value"></div>
+                    <div class="result-category-two" id="category-two"></div>
+                    <!-- Download Result -->
+                    <div class="button-result">
+                        <button type="button" id="download-result">Download Your BMI Result</button>
+                    </div>
+                </div>
+                <!-- Result Details -->
+                <div class="result-details">
+                    <div class="result-category-three" id="category-three"></div>
+                    <div class="result-category-four" id="category-four"></div>
+                    <div class="result-category-five" id="category-five"></div>
+                    <div class="button-result">
+                        <button type="button" id="button-consulting">Consulting to Nutritionist via App</button>
+                        <button type="button" id="button-register">Online Registration with Nutritionist</button>
+                    </div>
+                    <div class="result-disclaimer" id="disclaimer-state"></div>
+                    <div class="result-diseases" id="diseases-list">
+                        <div class="result-category-six" id="category-six"></div>
+                        <div class="result-category-seven" id="category-seven"></div>
+                        <div class="result-category-eight" id="category-eight"></div>
+                        <div class="result-category-nine" id="category-nine"></div>
+                        <div class="result-category-ten" id="category-ten"></div>
+                    </div>
+                </div>
+                <!-- Download App -->
+                <div class="download-option">
+                    <div class="download-title">Download Our App</div>
+                    <img src="assets/playstore.png">
+                    <img src="assets/appstore.png">
                 </div>
             </div>
         </section>
