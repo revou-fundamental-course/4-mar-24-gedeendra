@@ -170,12 +170,75 @@ header {
     margin-top: 12px;
 }
 
+.button-result button {
+    background-color: rgb(117, 190, 219);
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    margin-right: 8px;
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 0px;
+}
+
 .result-details {
     margin-top: 32px;
 }
 
 .result-category-three,
 .result-category-four,
-.result-category-five {
+.result-category-five,
+.result-disclaimer {
     padding-bottom: 12px;
+}
+
+.result-diseases {
+    background-color: rgb(242, 243, 245);
+    font-weight: bold;
+    padding: 24px;
+    margin: 12px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result-category-six,
+.result-category-seven,
+.result-category-eight,
+.result-category-nine,
+.result-category-ten {
+    width: 100%;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.result-category-six {
+    font-size: 24px;
+}
+
+.result-category-seven,
+.result-category-eight,
+.result-category-nine,
+.result-category-ten {
+    font-size: 20px;
+}
+
+.download-option {
+    padding: 24px;
+    margin: 12px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.download-title,
+.download-app {
+    width: 100%;
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    margin: 6px auto;
+    justify-content: center;
 }
