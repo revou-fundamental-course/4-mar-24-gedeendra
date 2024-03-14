@@ -35,10 +35,7 @@ header {
 }
 
 .main-container {
-    max-width: 1800px;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+    max-width: 2000px;
     margin: 20px auto;
 }
 
@@ -46,8 +43,8 @@ header {
 /* Form and Result Display */
 .container-form,
 .container-result {
-    width: 45%;
     margin: 12px auto;
+    padding: 8px;
     box-sizing: border-box;
 }
 
@@ -139,6 +136,10 @@ header {
     font-size: 20px; 
 }
 
+/* Form Result */
+.container-result {
+    display: none;
+}
 
 /* Result Box */
 .result-box {
@@ -241,4 +242,16 @@ header {
     text-align: center;
     margin: 6px auto;
     justify-content: center;
+}
+
+/* Responsive */
+@media (min-width:600px) {
+    .main-container {
+        justify-content: space-between;
+        display: flex;
+    }
+    .container-form,
+    .container-result {
+        width: 48%;
+    }
 }

@@ -26,7 +26,7 @@
         <section class="main-container">
 
             <!-- BMI Form -->
-            <div class="container-form">
+            <div class="container-form" id="area-form">
                 <form action="" method="post" autocomplete="on">
                     <div class="form-title">
                         BMI Calculator
@@ -39,8 +39,8 @@
                             <label>Gender</label>
                         </div>
                         <div class="gender-radio">
-                            <input type="radio" name="sex" id="sex-man"><label for="sex-man" autofocus required>Male</label>
-                            <input type="radio" name="sex" id="sex-woman"><label for="sex-woman" autofocus required>Female</label>
+                            <input type="radio" name="sex" id="sex-male" value="male"><label for="sex-male">Male</label>
+                            <input type="radio" name="sex" id="sex-female" value="female"><label for="sex-female">Female</label>
                         </div>
                         <div class="form-bar">
                             <label>Age (years)</label>
@@ -64,7 +64,7 @@
                         <!-- Execute Button -->
                         <div class="form-button">
                             <div class="button-special">
-                                <button type="submit" id="button-calculate" onclick="bmiCalculation()">Calculate BMI</button>
+                                <button type="button" id="button-calculate" onclick="bmiCalculation()">Calculate BMI</button>
                             </div>
                             <div class="button-normal">
                                 <button type="button" id="button-reset" onclick="bmiReset()">Reset</button>
@@ -87,7 +87,7 @@
             </div>
 
             <!-- BMI Result -->
-            <div class="container-result">
+            <div class="container-result" id="area-result">
                 <div class="result-title">
                     Result
                 </div>
