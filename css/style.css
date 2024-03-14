@@ -8,7 +8,7 @@ header {
     background-color: rgb(240, 241, 247);
 }
 
-.container-header-satu {
+.container-header-one {
     display: flex;
     padding: 4px;
     justify-content: center;
@@ -25,7 +25,7 @@ header {
     margin: 2px;
 }
 
-.container-header-dua {
+.container-header-two {
     display: flex;
     font-size: 24px;
     font-weight: light;
@@ -76,22 +76,21 @@ header {
 
 .form-bar input {
     width: 100%;
-    border-radius: 4px;
-    border-color: rgb(249, 249, 249);
+    border: 0.5px solid lightgray;
+    outline: 0.5px solid lightgray;
     padding: 6px 6px;
     font-family: calibri;
     font-size: 18px;
     box-sizing: border-box;
 }
 
+.form-bar input:focus {
+    border: 2px solid skyblue;
+    outline: 2px solid skyblue;
+}
+
 .form-bar input:hover {
-    width: 100%;
-    border-radius: 4px;
-    border-color: rgb(117, 190, 219);
-    padding: 6px 6px;
-    font-family: calibri;
-    font-size: 18px;
-    box-sizing: border-box;
+    border: 2px solid skyblue;
 }
 
 
@@ -152,7 +151,7 @@ header {
     justify-content: center;
 }
 
-.result-category-one, .result-value, .result-category-two, .button-result {
+.result-category-one, .result-value, .result-category-two, .result-category-two-a, .button-result {
     width: 100%;
     font-weight: lighter;
     text-align: center;
@@ -171,11 +170,16 @@ header {
     margin-top: 12px;
 }
 
+.result-category-two-a {
+    font-size: 24px;
+    margin-top: 6px;
+}
+
 .button-result button {
     background-color: rgb(117, 190, 219);
     color: white;
     margin-top: 16px;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
     margin-right: 8px;
     padding: 6px 16px;
     font-size: 16px;
@@ -192,6 +196,7 @@ header {
 .result-category-four,
 .result-category-five,
 .result-disclaimer {
+    margin-top: 24px;
     padding-bottom: 12px;
 }
 
@@ -226,6 +231,8 @@ header {
     font-size: 20px;
 }
 
+
+/* Download in Play Store and App Store */
 .download-option {
     padding: 24px;
     margin: 12px auto;

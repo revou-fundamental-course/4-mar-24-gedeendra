@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="container-header-satu">
+        <div class="container-header-one">
             <div class="header-logo">
                 <img src="assets/revou-logo.png" width="50px" height="50px">
             </div>
@@ -18,7 +18,7 @@
                 RevoU Fundamental Course
             </div>
         </div>
-        <div class="container-header-dua">
+        <div class="container-header-two">
             Software Engineering - Fundamental Course Assignment     
         </div>
     </header>
@@ -45,7 +45,7 @@
                         <div class="form-bar">
                             <label>Age (years)</label>
                             <div>
-                                <input name="bmiAge" type="tel" class="form-bar" id="bmiAge" placeholder="18 years old minimum" autofocus required>
+                                <input name="bmiAge" type="tel" class="form-bar" id="bmiAge" min="18" placeholder="18 years old or older" autofocus required>
                             </div>
                         </div>
                         <div class="form-bar">
@@ -97,10 +97,11 @@
                     <div class="result-category-one" id="category-one"></div>
                     <div class="result-value" id="bmi-value"></div>
                     <div class="result-category-two" id="category-two"></div>
+                    <div class="result-category-two-a" id="category-two-a"></div>
 
                     <!-- Download Result -->
                     <div class="button-result">
-                        <button type="submit" id="download-result">Download Your BMI Result</button>
+                        <button type="button" id="download-result">Download Your BMI Result</button>
                     </div>
                 </div>
 
@@ -110,8 +111,8 @@
                     <div class="result-category-four" id="category-four"></div>
                     <div class="result-category-five" id="category-five"></div>
                     <div class="button-result">
-                        <a href="" target="_blank"><button type="button" id="button-consulting">Consulting to Nutritionist via App</button></a>
-                        <a href="" target="_blank"><button type="button" id="button-register">Online Registration with Nutritionist</button></a>
+                        <a href="https://play.google.com/store/search?q=halodoc&c=apps" target="_blank"><button type="button" id="button-consulting">Consulting to Nutritionist via App</button></a>
+                        <a href="https://www.halodoc.com/tanya-dokter/kategori/spesialis-gizi-klinik" target="_blank"><button type="button" id="button-register">Online Registration with Nutritionist</button></a>
                     </div>
                     <div class="result-disclaimer" id="disclaimer-state">BMI does not fully represent a comprehensive diagnosis of an individual's health and disease risk. You need further consultation regarding your concerns and risks related to your weight.</div>
                     <div class="result-diseases" id="diseases-list">
@@ -127,8 +128,8 @@
                 <div class="download-option">
                     <div class="download-title">Download Our App</div>
                     <div class="download-app">
-                        <a href="https://play.google.com/store/" target="_blank"><img src="assets/playstore.png"></a>
-                        <a href="https://www.apple.com/id/app-store/" target="_blank"><img src="assets/appstore.png"></a>
+                        <a href="https://play.google.com/store/search?q=halodoc&c=apps" target="_blank"><img src="assets/playstore.png"></a>
+                        <a href="https://apps.apple.com/id/app/halodoc-dokter-obat/id1067217981?l=id" target="_blank"><img src="assets/appstore.png"></a>
                     </div>
                 </div>
             </div>
