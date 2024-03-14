@@ -24,51 +24,54 @@
     </header>
     <main>
         <section class="main-container">
+
             <!-- BMI Form -->
             <div class="container-form">
-                <div class="form-title">
-                    BMI Calculator
-                </div>
-                <div class="form-prolog">
-                    Having an ideal body weight is the dream of everyone. Not only does it support a pleasing appearance, but an ideal body weight also indicates a healthy condition. What about you? Let's calculate now using the BMI calculator.
-                </div>
-                <div class="form-input">
-                    <div class="input-gender">
-                        <label>Gender</label>
+                <form action="" method="post" autocomplete="on">
+                    <div class="form-title">
+                        BMI Calculator
                     </div>
-                    <div class="gender-radio">
-                        <input type="radio" name="sex" id="sex-man"><label for="sex-man">Male</label>
-                        <input type="radio" name="sex" id="sex-woman"><label for="sex-woman">Female</label>
+                    <div class="form-prolog">
+                        Having an ideal body weight is the dream of everyone. Not only does it support a pleasing appearance, but an ideal body weight also indicates a healthy condition. What about you? Let's calculate now using the BMI calculator.
                     </div>
-                    <div class="form-bar">
-                        <label>Age (years)</label>
-                        <div>
-                            <input name="bmiAge" type="number" class="form-bar" id="bmiAge" placeholder="18 years old minimum" required="required">
+                    <div class="form-input">
+                        <div class="input-gender">
+                            <label>Gender</label>
+                        </div>
+                        <div class="gender-radio">
+                            <input type="radio" name="sex" id="sex-man"><label for="sex-man" autofocus required>Male</label>
+                            <input type="radio" name="sex" id="sex-woman"><label for="sex-woman" autofocus required>Female</label>
+                        </div>
+                        <div class="form-bar">
+                            <label>Age (years)</label>
+                            <div>
+                                <input name="bmiAge" type="tel" class="form-bar" id="bmiAge" placeholder="18 years old minimum" autofocus required>
+                            </div>
+                        </div>
+                        <div class="form-bar">
+                            <label>Body Weight (kg)</label>
+                            <div>
+                                <input name="bmiWeight" type="tel" class="form-bar" id="bmiWeight" autofocus required>
+                            </div>
+                        </div>
+                        <div class="form-bar">
+                            <label>Body Height (cm)</label>
+                            <div>
+                                <input name="bmiHeight" type="tel" class="form-bar" id="bmiHeight" autofocus required>
+                            </div> 
+                        </div>
+                    
+                        <!-- Execute Button -->
+                        <div class="form-button">
+                            <div class="button-special">
+                                <button type="submit" id="button-calculate" onclick="bmiCalculation()">Calculate BMI</button>
+                            </div>
+                            <div class="button-normal">
+                                <button type="button" id="button-reset" onclick="bmiReset()">Reset</button>
+                            </div>                
                         </div>
                     </div>
-                    <div class="form-bar">
-                        <label>Body Weight (kg)</label>
-                        <div>
-                            <input name="bmiWeight" type="number" class="form-bar" id="bmiWeight" required="required">
-                        </div>
-                    </div>
-                    <div class="form-bar">
-                        <label>Body Height (cm)</label>
-                        <div>
-                            <input name="bmiHeight" type="number" class="form-bar" id="bmiHeight" required="required">
-                        </div> 
-                    </div>
-                
-                    <!-- Execute Button -->
-                    <div class="form-button">
-                        <div class="button-special">
-                            <button type="button" id="button-calculate" onclick="bmiCalculation()">Calculate BMI</button>
-                        </div>
-                        <div class="button-normal">
-                            <button type="button" id="button-reset" onclick="bmiReset">Reset</button>
-                        </div>                
-                    </div>
-                </div>
+                </form>
                 
                 <!-- BMI Calculator features -->
                 <div class="form-features">
@@ -88,24 +91,27 @@
                 <div class="result-title">
                     Result
                 </div>
+
                 <!-- Result Box -->
                 <div class="result-box">
                     <div class="result-category-one" id="category-one"></div>
                     <div class="result-value" id="bmi-value"></div>
                     <div class="result-category-two" id="category-two"></div>
+
                     <!-- Download Result -->
                     <div class="button-result">
-                        <button type="button" id="download-result">Download Your BMI Result</button>
+                        <button type="submit" id="download-result">Download Your BMI Result</button>
                     </div>
                 </div>
+
                 <!-- Result Details -->
                 <div class="result-details">
                     <div class="result-category-three" id="category-three"></div>
                     <div class="result-category-four" id="category-four"></div>
                     <div class="result-category-five" id="category-five"></div>
                     <div class="button-result">
-                        <button type="button" id="button-consulting">Consulting to Nutritionist via App</button>
-                        <button type="button" id="button-register">Online Registration with Nutritionist</button>
+                        <a href="" target="_blank"><button type="button" id="button-consulting">Consulting to Nutritionist via App</button></a>
+                        <a href="" target="_blank"><button type="button" id="button-register">Online Registration with Nutritionist</button></a>
                     </div>
                     <div class="result-disclaimer" id="disclaimer-state">BMI does not fully represent a comprehensive diagnosis of an individual's health and disease risk. You need further consultation regarding your concerns and risks related to your weight.</div>
                     <div class="result-diseases" id="diseases-list">
@@ -116,12 +122,13 @@
                         <div class="result-category-ten" id="category-ten"></div>
                     </div>
                 </div>
+
                 <!-- Download App -->
                 <div class="download-option">
                     <div class="download-title">Download Our App</div>
                     <div class="download-app">
-                        <img src="assets/playstore.png">
-                        <img src="assets/appstore.png">
+                        <a href="https://play.google.com/store/" target="_blank"><img src="assets/playstore.png"></a>
+                        <a href="https://www.apple.com/id/app-store/" target="_blank"><img src="assets/appstore.png"></a>
                     </div>
                 </div>
             </div>
